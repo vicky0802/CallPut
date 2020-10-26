@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_leg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="27000C"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg1_dec"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/edt_strategy_editor_leg1_price"
+        android:onClick="buttonClicked"
+        android:text="-"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_strategy_editor_leg1_price"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btn_strategy_editor_leg1_inc"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:minEms="5"
+        android:onClick="buttonClicked"
+        android:text="1022.25" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg1_inc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:onClick="buttonClicked"
+        android:text="+"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_leg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_strategy_editor_leg1_dec"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="Put"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg2_dec"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_strategy_editor_leg1_dec"
+        android:layout_toLeftOf="@+id/edt_strategy_editor_leg2_price"
+        android:onClick="buttonClicked"
+        android:text="-"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_strategy_editor_leg2_price"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_strategy_editor_leg1_dec"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btn_strategy_editor_leg2_inc"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:minEms="5"
+        android:text="1022.25" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg2_inc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_strategy_editor_leg1_dec"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:onClick="buttonClicked"
+        android:text="+"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_leg_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_strategy_editor_leg2_price"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="Call"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg3_dec"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_strategy_editor_leg2_inc"
+        android:layout_toLeftOf="@+id/edt_strategy_editor_leg3_price"
+        android:onClick="buttonClicked"
+        android:text="-"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edt_strategy_editor_leg3_price"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_strategy_editor_leg2_inc"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btn_strategy_editor_leg3_inc"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:minEms="5"
+        android:text="1022.25"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg3_inc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edt_strategy_editor_leg2_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:onClick="buttonClicked"
+        android:text="+"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_leg_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_strategy_editor_leg3_price"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="Call"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg4_dec"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_strategy_editor_leg3_inc"
+        android:layout_toLeftOf="@+id/edt_strategy_editor_leg4_price"
+        android:onClick="buttonClicked"
+        android:text="-"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edt_strategy_editor_leg4_price"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_strategy_editor_leg3_inc"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btn_strategy_editor_leg4_inc"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:minEms="5"
+        android:text="1022.25"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_strategy_editor_leg4_inc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edt_strategy_editor_leg3_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:onClick="buttonClicked"
+        android:text="+"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/separator_strategy_editor_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edt_strategy_editor_leg4_price"
+        android:layout_marginTop="10sp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_head_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator_strategy_editor_1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15sp"
+        android:text="Updated Strategy Result:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_risk_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_head_1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:text="Max Risk"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_risk_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_head_1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:text=""
+        android:textColor="#3700b3"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_gain_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_risk_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:text="Max Gain"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_gain_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_risk_txt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:text=""
+        android:textColor="#3700b3"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_lbep_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_gain_val"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:text="Breakeven Dn"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_lbep_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_gain_val"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:text=""
+        android:textColor="#3700b3"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_hbep_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_lbep_val"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:text="Breakeven Up"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_strategy_editor_hbep_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strategy_editor_lbep_val"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="15sp"
+        android:text=""
+        android:textColor="#3700b3"
+        android:textSize="16sp" />
+</RelativeLayout>

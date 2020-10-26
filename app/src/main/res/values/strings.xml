@@ -1,0 +1,37 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Call Put Analyzer</string>
+    <string name="finder_title">Strategy Finder</string>
+    <string name="ad_unit_id_add_portfolio_inserstitial">ca-app-pub-5512013912288448/7339670614</string>
+    <string name="ad_unit_id_add_to_folio">ca-app-pub-5512013912288448/5088924214</string>
+    <string name="ad_unit_id_broker_calls_banner">ca-app-pub-5512013912288448/2910669819</string>
+    <string name="ad_unit_id_broker_calls_inserstitial">ca-app-pub-5512013912288448/8817602618</string>
+    <string name="ad_unit_id_chart_eod_inserstitial">ca-app-pub-5512013912288448/8676803014</string>
+    <string name="ad_unit_id_chart_serach_banner">ca-app-pub-5512013912288448/2630269414</string>
+    <string name="ad_unit_id_chart_serach_interstitial">ca-app-pub-5512013912288448/6428013818</string>
+    <string name="ad_unit_id_finder_banner_legs">ca-app-pub-5512013912288448/4610526527</string>
+    <string name="ad_unit_id_finder_banner_main">ca-app-pub-5512013912288448/2454178618</string>
+    <string name="ad_unit_id_finder_legs_interstitial">ca-app-pub-5512013912288448/3742959533</string>
+    <string name="ad_unit_id_fno_margin_detail_banner">ca-app-pub-5512013912288448/8282532218</string>
+    <string name="ad_unit_id_fno_margin_detail_interstitial">ca-app-pub-5512013912288448/9759265417</string>
+    <string name="ad_unit_id_fno_margin_main_interstitial">ca-app-pub-5512013912288448/3867509014</string>
+    <string name="ad_unit_id_fno_pcr_details_banner">ca-app-pub-5512013912288448/6247395818</string>
+    <string name="ad_unit_id_fno_pcr_main_banner">ca-app-pub-5512013912288448/3573131011</string>
+    <string name="ad_unit_id_fno_pcr_main_interstitial">ca-app-pub-5512013912288448/5049864215</string>
+    <string name="ad_unit_id_fno_xmover_banner">ca-app-pub-5512013912288448/6107795018</string>
+    <string name="ad_unit_id_fno_xmover_interstitial">ca-app-pub-5512013912288448/7584528212</string>
+    <string name="ad_unit_id_home">ca-app-pub-5512013912288448/1796307816</string>
+    <string name="ad_unit_id_oi_daywise_inserstitial">ca-app-pub-5512013912288448/5862937418</string>
+    <string name="ad_unit_id_oi_stock_wise">ca-app-pub-5512013912288448/2117426618</string>
+    <string name="ad_unit_id_oi_stocks_inserstitial">ca-app-pub-5512013912288448/2769870214</string>
+    <string name="ad_unit_id_open_position">ca-app-pub-5512013912288448/9658724616</string>
+    <string name="ad_unit_id_open_position_inserstitial">ca-app-pub-5512013912288448/2909471011</string>
+    <string name="ad_unit_id_option_details">ca-app-pub-5512013912288448/6286455814</string>
+    <string name="ad_unit_id_option_prices_interstitial">ca-app-pub-5512013912288448/2807962445</string>
+    <string name="ad_unit_id_strategy_legs_banner">ca-app-pub-5512013912288448/8338563795</string>
+    <string name="ad_unit_id_strategy_main_banner">ca-app-pub-5512013912288448/9352262569</string>
+    <string name="ad_unit_id_strategy_main_interstitial">ca-app-pub-5512013912288448/7366949829</string>
+    <string name="app_id">ca-app-pub-5512013912288448~9319574610</string>
+    <string name="free_strategies">Standard Strategies</string>
+    <string name="paid_strategies">Premium Gold Strategies</string>
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="bulltrack.com.optiongreeks13"
+android:compileSdkVersion="28"
+android:compileSdkVersionCodename="9">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="com.android.vending.BILLING" />
+<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<permission
+    android:name="bulltrack.com.optiongreeks13.permission.C2D_MESSAGE"
+    android:protectionLevel="signature" />
+<uses-permission android:name="bulltrack.com.optiongreeks13.permission.C2D_MESSAGE" />
+<application
+    android:name="bulltrack.com.optionanalyzer.application.MyGreeksApplication"
+    android:allowBackup="true"
+    android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+    android:icon="@mipmap/ob"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    android:usesCleartextTraffic="true">
+    <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="@string/app_id" />
+
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.LaunchActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.AdvGreekSearchActivity"
+        android:label="Option Search"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.GreekSearchResultsActivity"
+        android:label="Search Results"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.AdvGreekSearchActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.CalculatorActivity"
+        android:label="Option Calculator"
+        android:screenOrientation="portrait" />
+
+<!--    <meta-data-->
+<!--        android:name="com.google.android.gms.version"-->
+<!--        android:value="@integer/google_play_services_version" />-->
+
+<!--    <activity-->
+<!--        android:name="com.google.android.gms.ads.AdActivity"-->
+<!--        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
+<!--        android:exported="false"-->
+<!--        android:theme="@style/Theme.Translucent" />-->
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.OptionDetailsActivity"
+        android:label="Option Details"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.AddPortfolioActivity"
+        android:label="Add To Portfolio"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ShowPortfolioActivity"
+        android:label="Open Positions"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.MyWatchActivity"
+        android:label="My Watches"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ShowClosedFolioPositionActivity"
+        android:label="Closed Positions"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.FiiDiiDayWiseActivity"
+        android:label="FII/DII OI Day-Wise"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.FiiDiiCurrentActivity"
+        android:label="FII/DII OI Current"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.OIStockActivity"
+        android:label="Stock-Wise OI"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.BrokerCallsActivity"
+        android:label="Buy/Sell Calls"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ChartEodActivity"
+        android:label="EOD Option Charts"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ChartSearchActivity"
+        android:label="Option Charts Search"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.OptionMarginMainActivity"
+        android:label="Option Margin &amp; Premium"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.MarginDetailActivity"
+        android:label="Margin/Premium Calculator"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.XDayMoverActivity"
+        android:label="Fast Mover Options"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.PCRMainActivity"
+        android:label="Put Call Ratios"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.PCRDetailActivity"
+        android:label="PCR Tracker"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ActivityStrategyMain"
+        android:label="Trading Strategies"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ActivityStrategyLegs"
+        android:label="Strategy Details"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.ActivityStrategyMain"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ActivityStrategyFutLegs"
+        android:label="Strategy Details"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.ActivityStrategyFutMain"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.AboutApp"
+        android:label="About"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.ActivityStrategyFutMain"
+        android:label="Indices"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.TodaysCallActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.CallPerformanceMain"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.MyCallsActivity"
+        android:label="My Calls"
+        android:screenOrientation="portrait" />
+    <activity android:name="bulltrack.com.optionanalyzer.activity.DemoYTActivity" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.FinderMainActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:label="@string/finder_title"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.FinderLegsActivity"
+        android:label="Strategy Details"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.FinderFolio"
+        android:label="My Strategies"
+        android:parentActivityName="bulltrack.com.optionanalyzer.activity.MainActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="bulltrack.com.optionanalyzer.activity.GreekMainActivity"
+        android:label="Option Prices"
+        android:screenOrientation="portrait" />
+    <activity android:name="bulltrack.com.optionanalyzer.activity.FinderDemoYTActivity" />
+
+<!--    <service-->
+<!--        android:name="com.google.firebase.messaging.FirebaseMessagingService"-->
+<!--        android:exported="true">-->
+<!--        <intent-filter android:priority="-500">-->
+<!--            <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--        </intent-filter>-->
+<!--    </service>-->
+<!--    <provider-->
+<!--        android:name="com.google.android.gms.ads.MobileAdsInitProvider"-->
+<!--        android:authorities="bulltrack.com.optiongreeks13.mobileadsinitprovider"-->
+<!--        android:exported="false"-->
+<!--        android:initOrder="100" />-->
+<!--    <service android:name="com.google.firebase.components.ComponentDiscoveryService">-->
+<!--        <meta-data-->
+<!--            android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"-->
+<!--            android:value="com.google.firebase.components.ComponentRegistrar" />-->
+<!--    </service>-->
+<!--    <receiver-->
+<!--        android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"-->
+<!--        android:exported="true"-->
+<!--        android:permission="com.google.android.c2dm.permission.SEND">-->
+<!--        <intent-filter>-->
+<!--            <action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+<!--            <category android:name="bulltrack.com.optiongreeks13" />-->
+<!--        </intent-filter>-->
+<!--    </receiver>-->
+<!--    <service-->
+<!--        android:name="com.google.firebase.iid.FirebaseInstanceIdService"-->
+<!--        android:exported="true">-->
+<!--        <intent-filter android:priority="-500">-->
+<!--            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+<!--        </intent-filter>-->
+<!--    </service>-->
+<!--    <activity-->
+<!--        android:name="com.google.android.gms.common.api.GoogleApiActivity"-->
+<!--        android:exported="false"-->
+<!--        android:theme="@style/Theme.Translucent.NoTitleBar" />-->
+<!--    <provider-->
+<!--        android:name="com.google.firebase.provider.FirebaseInitProvider"-->
+<!--        android:authorities="bulltrack.com.optiongreeks13.firebaseinitprovider"-->
+<!--        android:exported="false"-->
+<!--        android:initOrder="100" />-->
+</application>
+</manifest>
+
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--package="bulltrack.com.optionanalyzer">-->
+
+<!--<application-->
+<!--    android:allowBackup="true"-->
+<!--    android:icon="@mipmap/ic_launcher"-->
+<!--    android:label="@string/app_name"-->
+<!--    android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--    android:supportsRtl="true"-->
+<!--    android:theme="@style/AppTheme" />-->
+
+<!--</manifest>-->
+
+
